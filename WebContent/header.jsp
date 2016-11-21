@@ -9,11 +9,16 @@
   		<link rel="stylesheet" href="Resources/Css/bootstrap.min.css">
   		<link rel="stylesheet" href="Resources/Css/Theme.css">
   		<link rel="stylesheet" href="Resources/Css/TemplateStyles.css">
-  		<script src="Resources/Js/jquery.min.js"></script>
-  		<script src="Resources/Js/bootstrap.min.js"></script>
-  		<script src="Resources/Js/angular.js"></script>
-  		<script src="Resources/Js/angular-route.js"></script>
-  		<script src="Resources/Js/App.js"></script>
+  		<script src="Resources/Js/Jquery/jquery.min.js"></script>
+  		<script src="Resources/Js/Bootstrap/bootstrap.min.js"></script>
+  		<script src="Resources/Js/AngularJs/angular.js"></script>
+  		<script src="Resources/Js/AngularJs/angular-route.js"></script>
+  		<script src="Resources/Js/AngularJs/app.js"></script>
+  		<script src="Resources/Js/AngularJs/config.js"></script>
+  		<script src="Resources/Js/AngularJs/services.js"></script>
+  		<script src="Resources/Js/AngularJs/custom-directives.js"></script>
+  		<script src="Resources/Js/AngularJs/filters.js"></script>
+  		<script src="Resources/Js/AngularJs/controllers.js"></script>
 		<title>Angular JS SPA</title>
 	</head>
 	<body>

@@ -5,7 +5,7 @@
 		<footer class="site-footer">
 			<table class="flatTable">
 				<tr class="headerTr">
-					<td class="titleTd">Your Ip Address : ${ipAddress}</td>
+					<td class="titleTd">Footer</td>
 				</tr>
 			</table>
 		</footer>

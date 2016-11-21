@@ -52,10 +52,10 @@ public class UserList extends HttpServlet {
 				userDetailsList.add(userDetails);
 			}
 
-			String json = new Gson().toJson(userDetailsList);
+			String jsonData = new Gson().toJson(userDetailsList);
 
 			response.setContentType("application/json");
-			response.getWriter().write(json);
+			response.getWriter().write(jsonData);
 		}
 	}
 
