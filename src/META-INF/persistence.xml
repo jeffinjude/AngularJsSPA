@@ -7,8 +7,7 @@
    http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
    
    <persistence-unit name = "Hibernate_JPA" transaction-type = "RESOURCE_LOCAL">
-      <class>main.java.models.Policy</class>
-      <class>main.java.models.Party</class>
+      <class>models.UserDetails</class>
       
       <properties>
          <property name = "javax.persistence.jdbc.url" value = "jdbc:mysql://localhost:3306/angularjs-spa"/>
