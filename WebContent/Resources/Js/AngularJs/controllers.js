@@ -31,6 +31,10 @@ angularSpaAppModule.controller('AdduserController', ['$scope','AverageCalculator
 			window.alert("Enter valid inputs!");
 		}
 	};
+	
+	vm.cancel = function(){
+		$location.path( "/listuser" );
+	};
 }]);
 
 angularSpaAppModule.controller('ListuserController',['$scope','$http', function($scope, $http) {
@@ -84,6 +88,10 @@ angularSpaAppModule.controller('EdituserController',['$scope','$http', '$routePa
 		else{
 			window.alert("Enter valid inputs!");
 		}
+	};
+	
+	vm.cancel = function(){
+		$location.path( "/listuser" );
 	};
 }]);
 

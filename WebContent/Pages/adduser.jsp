@@ -68,6 +68,7 @@
 				</td>
 				<td>
 					<button name="submitBtn" id="submitBtn" ng-click="adduserController.submitForm(userForm)">Submit</button>
+					<button name="cancelBtn" id="cancelBtn" ng-click="adduserController.cancel()">Cancel</button>
 				</td>
 			</tr>
 		</table>

@@ -68,6 +68,7 @@
 				</td>
 				<td>
 					<button name="submitBtn" id="submitBtn" ng-click="edituserController.submitForm(userForm)">Update</button>
+					<button name="cancelBtn" id="cancelBtn" ng-click="edituserController.cancel()">Cancel</button>
 				</td>
 			</tr>
 		</table>
