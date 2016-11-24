@@ -1,5 +1,5 @@
 //ROUTES
-angularSpaAppModule.config(['$routeProvider', function($routeProvider) {
+angularSpaAppModule.config(['$routeProvider', '$httpProvider', function($routeProvider,$httpProvider) {
     $routeProvider
         // route for the home page
         .when('/', {
@@ -30,4 +30,20 @@ angularSpaAppModule.config(['$routeProvider', function($routeProvider) {
             templateUrl : 'Pages/listuser.jsp',
             controller  : 'DeleteuserController'
         });
+    
+    
+    //CODE TO DISABLE CACHING OF ANGULAR HTTP GET REQUESTS
+    //initialize get if not there
+    if (!$httpProvider.defaults.headers.get) {
+        $httpProvider.defaults.headers.get = {};    
+    }    
+
+    // Answer edited to include suggestions from comments
+    // because previous version of code introduced browser-related errors
+
+    //disable IE ajax request caching
+    $httpProvider.defaults.headers.get['If-Modified-Since'] = 'Mon, 26 Jul 1997 05:00:00 GMT';
+    // extra
+    $httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
+    $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
 }]);
